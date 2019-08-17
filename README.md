@@ -1,5 +1,7 @@
 # MNIST
 
+(For the vidoe, please get into the branch and view video(1)(2)(3).)
+
 # Introduction 
 The goal of this project is to predict the numbers in the corresponding images uploaded by users of the program. Also, to make sure of the efficiency of transferring and storing data, the virtual container Docker is included in this project. 
 Specifically, Convolutional Neural Network(CNN), a trained model of which is deployed into Docker, is used to predict the handwriting numbers. The results of predictions are given to two locations at the same time. First, by RESTful API, results can be transferred to the website that this project established earlier, users can see the results predicted on the website directly. Second, the predictions of the results are recorded in the phpMyAdmin databases, including both the numbers and the time used to make those predictions correspondingly.
