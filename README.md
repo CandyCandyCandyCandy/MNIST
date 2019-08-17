@@ -1,5 +1,13 @@
 # MNIST
 
+# Introduction 
+The goal of this project is to predict the numbers in the corresponding images uploaded by users of the program. Also, to make sure of the efficiency of transferring and storing data, the virtual container Docker is included in this project. 
+Specifically, Convolutional Neural Network(CNN), a trained model of which is deployed into Docker, is used to predict the handwriting numbers. The results of predictions are given to two locations at the same time. First, by RESTful API, results can be transferred to the website that this project established earlier, users can see the results predicted on the website directly. Second, the predictions of the results are recorded in the phpMyAdmin databases, including both the numbers and the time used to make those predictions correspondingly.
+
+# How to use?
+Open the html. Click "Choose File", and upload images. Click "predict", and then you will get the results.
+
+# Preparations
 Due to the problem of the directory in this project, users should do several things before running it.
 
 First, create an empty file named "model".
@@ -12,6 +20,9 @@ Forth, create an empty file named "docker_mnist", and put "mnist" and "Dockerfil
 
 Before other operations, users should run "MNIST.py", the trained model of which will be sotred in "model".
 
+
+
+# Operations
 The last work is Docker Construction. Users are suggested to follow the instructions to make sure the process goes well.
 
 1) Download phpMyAdmin and MySQL from Docker registry:
